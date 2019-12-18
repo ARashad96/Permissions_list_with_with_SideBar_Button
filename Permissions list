@@ -1,0 +1,30 @@
+https://developer.android.com/reference/android/Manifest.permission
+
+Contains all permissions required just type the permission required in your manifest.
+
+EX:
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.arashad96.andoriddeveloperadvancedkit">
+    
+    <uses-permission android:name="android.permission.INTERNET"/>      <---------------- PERMISSIONS HERE
+    
+       <application
+        android:allowBackup="true"
+        android:icon="@drawable/profile"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/profile"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
